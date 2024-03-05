@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin: 15px;
+            display: block;
+            background-color:darkslategray;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            transition: 0.6s ease;
+            border-radius: 15px;
+        }
+        button:hover{
+            margin: 15px;
+            transform: scale(1.1);
+            background-color: transparent;
+            color: darkslategray;
+            border: 1px solid darkslategray;
+        }
+    </style>
+</head>
+
+<body>
+<button onclick="q1()">Question:1</button>   
+<button onclick="q2()">Question:2</button>   
+<button onclick="q3()">Question:3</button>   
+<button onclick="q4()">Question:4</button>  
+<button onclick="q5a()">Question:5(a)</button> 
+<button onclick="q5b()">Question:5(b)</button>  
+<button onclick="q6()">Question:6</button>   
+<button onclick="q7()">Question:7</button>   
+<button onclick="q8()">Question:8</button>   
+<button onclick="q9()">Question:9</button>   
+<button onclick="q10()">Question:10</button>   
+<button onclick="q11()">Question:11</button>   
+    <script>
+        function q1(){
+   var city=prompt("Enter A City Name Karachi");
+   
+   if(city === "karachi"){
+    document.write("Welcome to city of lights")
+   }
+   else{
+    document.write("Enter A Valid City Name")
+   }
+}
+
+function q2(){
+   var Gender=prompt("Enter A Gender");
+   
+   if(Gender.toLowerCase() === "male"){
+    document.write("Good Morning Sir")
+   }
+   else if(Gender.toLowerCase() === "female"){
+    document.write("Good Morning Madam")
+   }
+   else{
+    document.write("Enter A Valid Gender")
+   }
+}
+function q3(){
+var color1=prompt("ENTER SIGNAL COLOUR");
+
+
+if(color1.toLowerCase() ==="red"){
+    document.write("MUST STOP")
+}
+else if(color1.toLowerCase() ==="yellow"){
+    document.write("READY TO MOVE")
+}
+else if(color1.toLowerCase() ==="green"){
+    document.write("MOVE NOW")
+}
+else{
+    document.write("THE COLOUR YOU INPUT IN A PROMPT IS NOT PRESENT IN SIGNAL LIGHTS")
+}
+}
+function q4(){
+    var fuel=prompt("How Many Ltr Petroll You Have");
+    if(fuel < 0.25){
+        document.write("plz refill ⛽")
+    }
+    else{
+        document.write("Dont Worry you are not in trouble ☺ ")
+    }
+}
+    function q5a(){
+        var a=4;
+        if(++a == 5){
+            alert("given condition for variable a is true");
+        }
+    }
+    function q5b(){
+     var b = 82;
+if (b++ === 83){
+alert("given condition for variable b is true");
+}
+else{
+    alert("give condition is false")
+}
+
+    }
+    function q6(){
+        var m1=+prompt("Enter Subject 1 Marks");
+        var m2=+prompt("Enter Subject 1 Marks");
+        var m3=+prompt("Enter Subject 1 Marks");
+    var obt= m1+m2+m3;
+    var tmakr=300;
+    document.write("TOTAL MARKS"+"=" +tmakr +"<br>")
+    document.write("MARK-OBTAINER"+"="+obt+"<br>")
+var per= obt *100 /tmakr;
+document.write("Percentage"+"=" + per+"%" +"<br>")  
+
+if(per < 59){
+    document.write("Grade"+ "Fail")
+} 
+
+else if (per < 60){
+    document.write( "Grade"+"="+"B-GRADE")
+}
+else if (per < 70){
+    document.write( "Grade"+"="+"A-GRADE")
+}
+else if (per < 80){
+    document.write( "Grade"+"="+"A-One")
+}
+else if (per < 90){
+    document.write( "Grade"+"="+"A-one")
+}
+else if (per < 100){
+    document.write( "Grade"+"="+"A-one")
+}
+else{
+    document.write( "Grade"+"="+"Fail")
+}
+}
+ 
+ function q7(){
+    var gn=prompt("Enter a Number UNder 1 to 10")
+    if(gn == "4"){
+        document.write("YOU GUESS CORRECT")
+    }
+    else if(gn == "5"){
+        document.write("Near To A Number")
+    }
+    
+    else if(gn == "3"){
+        document.write("Near To A Number")
+    }
+else{
+    document.write("Your Guess Num Is Not Correct Number"+"<BR>"+"Hint is:"+"<BR>Term of Khulafa Rashidin of Islam")
+    // alert("You Want A HINT TYPE YES")
+} 
+}
+ function q8(){
+    var divi=prompt("Enter a number whcih is divisble by 3")
+// var dr=divi/3;
+    if(divi % 3 ==0){
+    document.write("This number is Divisible by 3")
+} 
+else{
+    document.write("try another number which is divisble by 3")
+}
+}
+function q9(){
+    var divi=prompt("Enter a number to check this number is ")
+// var dr=divi/3;
+    if(divi % 2 ==0){
+    document.write("Your Number is Even")
+} 
+
+else{
+    document.write("Your Number is Odd")
+}
+}
+ function q10(){
+    var temperature=prompt("Enter Tempertaure")
+    if(temperature >= 40){
+        document.write("To much hot")
+    }
+    else if(temperature >= 30){
+        document.write("To hot")
+    }
+    else if(temperature >= 20){
+        document.write("THE WEATHER TODAY IS NORMAL")
+    }
+    else if(temperature >= 10){
+        document.write("OMG ! TODAY WEAHTER IS cold")
+    }
+    else{
+        document.write("Enter A Valur under 40")
+    }
+ }
+function q11(){
+var arthe=prompt("Enter Any Operation + , - , / ,%")
+var fnumber=+prompt("Enter First Number")
+var snumber=+prompt("Enter Second Number")
+if(arthe === "+"){
+    document.write("Result of + ="  + (fnumber + snumber))
+}
+else if(arthe === "-"){
+    document.write("Result of - ="  +(fnumber - snumber))
+}
+else if(arthe === "/"){
+    document.write("Result of / ="  + (fnumber / snumber))
+}
+else if(arthe === "%"){
+    document.write("Result of % ="  +(fnumber % snumber))
+}
+else{
+    document.write("Enter A  Correct Sign which is Mention in POP-UP ")
+}
+}
+ </script>
+</body>
+</html>
